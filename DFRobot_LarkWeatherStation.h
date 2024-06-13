@@ -71,14 +71,14 @@ public:
    * @param keys Data to be obtained
    * @return String Returns the acquired data
    */
-  String getValue(char *keys);
+  String getValue(const char *keys);
   /**
    * @brief Get data unit
    *
    * @param keys Data for which units need to be obtained
    * @return String Returns the obtained units
    */
-  String getUnit(char *keys);
+  String getUnit(const char *keys);
  /**
   * @brief Get all data
   *

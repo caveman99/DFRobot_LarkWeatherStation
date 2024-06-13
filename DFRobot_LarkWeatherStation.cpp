@@ -55,7 +55,7 @@ typedef struct{
 }__attribute__ ((packed)) sCmdRecvPkt_t, *pCmdRecvPkt_t;
 
 
-String DFRobot_LarkWeatherStation::getValue(char *keys)
+String DFRobot_LarkWeatherStation::getValue(const char *keys)
 {
   String values = "";
   uint8_t errorCode;
@@ -87,7 +87,7 @@ String DFRobot_LarkWeatherStation::getValue(char *keys)
   return values;
 
 }
-String DFRobot_LarkWeatherStation::getUnit(char *keys)
+String DFRobot_LarkWeatherStation::getUnit(const char *keys)
 {
   String values = "";
   uint8_t errorCode;
